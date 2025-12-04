@@ -11,8 +11,8 @@ INCEpTION annotation exports and to derive reproducible **train/test splits**.
 
    Inside the *curation* folder we place the *bundle_cas_json.py* file and we just run it as:
 
-   '''bash
+   ```bash
    python3 bundle_cas_json.py
-   '''
+   ```
     
 3. **Create document-level train/test splits** with preserved Claim / Non-Claim ratios.
