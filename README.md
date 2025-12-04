@@ -42,3 +42,4 @@ INCEpTION annotation exports and to derive reproducible **train/test splits**.
      --keep-ratio \
      --seed 42
    ```
+   This will create 80/20 train/test splits, with no document overlap to prevent contamination, along with preserved Claim:Non-Claim ratios.
