@@ -15,7 +15,7 @@ INCEpTION annotation exports and to derive reproducible **train/test splits**.
    python3 bundle_cas_json.py
    ```
 
-   This will create a *jsons* folder where it will rename and bundle all the UIMA CAS JSON files.
+   This will create a *jsons* folder where it will rename and bundle all the UIMA CAS JSON files containing the annotation data.
 
    The bundling of these files facilitates the dataset building in the next step.
 
