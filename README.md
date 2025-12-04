@@ -3,7 +3,7 @@
 This repository provides a small pipeline to build the **ClaimPT-style dataset** from
 INCEpTION annotation exports and to derive reproducible **train/test splits**.
 
-The workflow has two main steps:
-
-1. **Build the full dataset** from INCEpTION CAS JSON files.
-2. **Create document-level train/test splits** with preserved Claim / Non-Claim ratios.
+1. **Extracting CAS JSON files from INCEpTION.**
+   While on the INCEpTION platform we go to *Settings > Export* and select the format *UIMA CAS JSON 0.4.0* and then click *Export curated documents*
+    
+3. **Create document-level train/test splits** with preserved Claim / Non-Claim ratios.
