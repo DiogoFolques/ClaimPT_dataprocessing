@@ -46,4 +46,4 @@ INCEpTION annotation exports and to derive reproducible **train/test splits**.
 
    Using the same seed ensures reproducibility in splits creation.
 
-   (Note: this pipeline assumes the document names in the dataset and splits will be the annotated file names in the INCEpTION platform, but this can be modified in the bundling script.)
+   (Note: this pipeline assumes the document names in the dataset will be the names of the files uploaded to the INCEpTION platform, but this can be modified in the bundling script.)
