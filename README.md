@@ -19,7 +19,7 @@ INCEpTION annotation exports and to derive reproducible **train/test splits**.
 
    The bundling of these files facilitates the dataset building in the next step.
 
-2. **Building the Dataset**
+2. **Building the ClaimPT-style Dataset**
 
    Inside the *jsons* folder we place the *build_claimpt_dataset.py* file and run it as:
 
@@ -31,4 +31,14 @@ INCEpTION annotation exports and to derive reproducible **train/test splits**.
      ```
    This step will output the ClaimPT-style dataset in both JSON and JSONL formats.
    
-3. **Create document-level train/test splits** with preserved Claim / Non-Claim ratios.
+3. **Creating document-level train/test splits** with preserved Claim / Non-Claim ratios.
+
+   In order to create the train/test splits we just need to run *build_claimpt_splits.py* as follows:
+
+   
+   ```bash
+   python3 build_claimpt_splits.py \
+     --input claimpt_dataset.pretty.json \
+     --keep-ratio \
+     --seed 42
+   ```
