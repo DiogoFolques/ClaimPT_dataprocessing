@@ -44,4 +44,6 @@ INCEpTION annotation exports and to derive reproducible **train/test splits**.
    ```
    This will create 80/20 train/test splits, with no document overlap to prevent contamination, along with preserved Claim:Non-Claim ratios.
 
+   Using the same seed unsures reproducibility in splits creation.
+
    (Note: this pipeline assumes the document names in the dataset and splits will be the annotated file names in the INCEpTION platform, but this can be modified in the bundling script.)
