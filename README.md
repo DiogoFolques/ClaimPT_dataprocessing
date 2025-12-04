@@ -17,15 +17,18 @@ INCEpTION annotation exports and to derive reproducible **train/test splits**.
 
    This will create a *jsons* folder where it will rename and bundle all the UIMA CAS JSON files.
 
+   The bundling of these files facilitates the dataset building in the next step.
+
 2. **Building the Dataset**
 
    Inside the *jsons* folder we place the *build_claimpt_dataset.py* file and run it as:
 
    ```bash
    python3 build_claimpt_dataset.py \
-     --input_dir jsons \
+     --input_dir . \
      --output_json claimpt_dataset.pretty.json \
      --output_jsonl claimpt_dataset.jsonl
      ```
+   This step will output the ClaimPT-style dataset in both JSON and JSONL formats.
    
 3. **Create document-level train/test splits** with preserved Claim / Non-Claim ratios.
